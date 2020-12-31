@@ -52,7 +52,7 @@ export default function Login(props) {
   const [password, setPassword] = useState('');
   
   const submitBtn = () => {
-    axios.post("https://lotterycash.herokuapp.com/api/users/login-admin",
+    axios.post("https://lotterycashvalue.herokuapp.com/api/users/login-admin",
     {
       username: username,
       password: password

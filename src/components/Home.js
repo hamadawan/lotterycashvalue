@@ -28,7 +28,7 @@ function Home() {
     const [power, setPower] = useState({});
     
     useEffect(()=>{
-        Axios.get('https://lotterycash.herokuapp.com/api/jackpot/mega'
+        Axios.get('https://lotterycashvalue.herokuapp.com/api/jackpot/mega'
           ).then(response =>  {
             setMega(response.data)    
           }).catch(err =>{
@@ -36,7 +36,7 @@ function Home() {
     }, [])
 
     useEffect(()=>{
-        Axios.get('https://lotterycash.herokuapp.com/api/jackpot/pick6'
+        Axios.get('https://lotterycashvalue.herokuapp.com/api/jackpot/pick6'
           ).then(response =>  {
             setPick(response.data)    
           }).catch(err =>{
@@ -44,7 +44,7 @@ function Home() {
     }, [])
 
     useEffect(()=>{
-        Axios.get('https://lotterycash.herokuapp.com/api/jackpot/power'
+        Axios.get('https://lotterycashvalue.herokuapp.com/api/jackpot/power'
           ).then(response =>  {
             setPower(response.data)    
           }).catch(err =>{

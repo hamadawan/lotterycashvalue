@@ -26,7 +26,7 @@ export default function AddJackpot(props) {
 
   useEffect(()=>{
     
-    Axios.get('https://lotterycash.herokuapp.com/api/jackpot/',
+    Axios.get('https://lotterycashvalue.herokuapp.com/api/jackpot/',
           {
             headers:{
               'Authorization': props.token
@@ -48,7 +48,7 @@ export default function AddJackpot(props) {
       return;
     }
   
-    Axios.post('https://lotterycash.herokuapp.com/api/jackpot/add-jackpot',
+    Axios.post('https://lotterycashvalue.herokuapp.com/api/jackpot/add-jackpot',
     // Axios.post('https://lottery-cash.herokuapp.com/api/jackpot/add-jackpot',
           {
             type: type,

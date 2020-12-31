@@ -40,7 +40,7 @@ function MyModal(props){
         else
         {
             console.log(props.user.user_id, props.user.username, props.token)
-            Axios.post("https://lotterycash.herokuapp.com/api/users/change-pass-admin",
+            Axios.post("https://lotterycashvalue.herokuapp.com/api/users/change-pass-admin",
                 {
                     _id: props.user.user_id,
                     password: newPass,
